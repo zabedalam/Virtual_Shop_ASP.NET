@@ -60,21 +60,22 @@
 
 <div class="row">
     <div class="col-md-4">
-        
+
         <h2>Home Delivery</h2>
         <p>
             Are you busy?No worries!We are with you!!
             We will knock at your door with products!!!by
             @DateTime.Now.AddDays(1).ToLongDateString();
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        @using (Html.BeginForm())
+        {
+            @Html.TextBox("searchCriteria") <input type="submit" value="Find products" />
+        }
+        @*<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>*@
     </div>
     
         <div class="col-md-8">
-            @using (Html.BeginForm())
-            {
-                @Html.TextBox("searchCriteria") <input type="submit" value="Find products" />
-            }
+            
             <h2>Our Products</h2>
             <table class="table-striped table-bordered table-responsive">
                 @foreach (var product in Model)
