@@ -217,6 +217,7 @@
     <Content Include="Content\Images\Badminton.jpg" />
     <Content Include="Content\Images\CricketBat.jpg" />
     <Content Include="Content\Images\Football.jpg" />
+    <Content Include="Content\Images\ShopImage.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
